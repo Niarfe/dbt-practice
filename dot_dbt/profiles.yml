@@ -1,0 +1,13 @@
+jaffle_shop: # this needs to match the profile: in your dbt_project.yml file
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /Users/eolivares/.dbt/dbt-practice-210412-b994f6a6e03a.json # replace this with the full path to your keyfile
+      project: dbt-practice-210412 # Replace this with your project id
+      dataset: dbt_efrain # Replace this with dbt_your_name, e.g. dbt_bob
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
