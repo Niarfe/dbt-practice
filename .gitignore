@@ -1,0 +1,6 @@
+# venv
+dbt-env/
+
+# jupyter
+**/*ipynb_checkpoints
+**/*.pyc
